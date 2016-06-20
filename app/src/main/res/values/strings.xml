@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LivrosFirebase</string>
+    <string name="google_sign_in_key">321828196395-108b2v4c5jvbbuihhavtnndu1oq2hrfr.apps.googleusercontent.com</string>
+    <string name="erro_google_sign_in">Erro ao efetuar login com a conta do Google</string>
+    <string name="sign_up">Sign Up</string>
+</resources>

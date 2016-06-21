@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="livro"
+            type="br.com.cimobile.livrosfirebase.Livro"/>
+
+    </data>
+<LinearLayout
+
+    android:id="@+id/activity_cadastro_activyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.cimobile.livrosfirebase.CadastroActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@={livro.titulo}"
+        android:id="@+id/edit_titulo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@={livro.autor}"
+        android:id="@+id/edit_autor"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickSave"
+        android:text="@string/salvar"/>
+</LinearLayout>
+</layout>

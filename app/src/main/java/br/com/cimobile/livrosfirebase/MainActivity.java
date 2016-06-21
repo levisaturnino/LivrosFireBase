@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
        mBinding =  DataBindingUtil.setContentView(this,R.layout.activity_main);
-
+        livroRef = FirebaseDatabase.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
                 if (user != null) {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+
+                    initFireBase();
+                    initUI();
                 } else {
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");
@@ -61,8 +64,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        initFireBase();
-        initUI();
+
     }
 
     private void initUI() {
@@ -78,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         mBinding.recyclerView.setAdapter(mAdapter);
+
+
     }
 
     private void initFireBase() {

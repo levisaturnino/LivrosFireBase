@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "321828196395",
+    "firebase_url": "https://livrosfirebase-36894.firebaseio.com",
+    "project_id": "livrosfirebase-36894",
+    "storage_bucket": "livrosfirebase-36894.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321828196395:android:887c2b52814a64f0",
+        "android_client_info": {
+          "package_name": "br.com.cimobile.livrosfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321828196395-fh9leilukntd7mlhstgi1iv3ikuio43u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.cimobile.livrosfirebase",
+            "certificate_hash": "191692FF43B6672EFD4AA0C32EDD77EA4D406B03"
+          }
+        },
+        {
+          "client_id": "321828196395-108b2v4c5jvbbuihhavtnndu1oq2hrfr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzI9bx7w2pk32Pl_yQU5bqZ1lQtwftChM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321828196395-108b2v4c5jvbbuihhavtnndu1oq2hrfr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
